@@ -1,0 +1,69 @@
+.uzklausos {
+  position: fixed;
+  color: white;
+  z-index: 1;
+}
+
+.uzklausosContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  z-index: 2;
+  margin: 10rem auto; /* Center the table and adjust margins */
+}
+
+.tablehead {
+  background-color: rgba(112, 52, 232, 1);
+  color: white;
+  border: none;
+}
+  
+  .th,
+  .td {
+    border-bottom: 1px solid rgb(160 160 160);
+    text-align: center; /* Center horizontally */
+    vertical-align: middle; /* Center vertically */
+    padding: 1rem; /* Add padding for better spacing */
+    text-wrap: nowrap;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row; /* Align buttons horizontally */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
+}
+
+.priimti-atsaukti {
+  background-color: rgba(112, 52, 232, 1);
+  border: none;
+  margin: 0 1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%; /* Make the buttons round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove default padding */
+}
+
+.accept,
+.deny {
+  width: 1.5rem; /* Adjust size to fit within the button */
+  height: 1.5rem; /* Adjust size to fit within the button */
+}
+
+.priimti-atsaukti:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+  

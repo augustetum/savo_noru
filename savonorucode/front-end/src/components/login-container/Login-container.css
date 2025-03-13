@@ -1,0 +1,13 @@
+.LoginContainer{
+    background-color: rgba(112, 52, 232, 1);
+    width: 100%;
+    height: 65%;
+    border-top: 1.5px solid white;
+    position: absolute;
+    top: 35%;
+    overflow: scroll;
+}
+
+.LoginContainer::-webkit-scrollbar{
+    display: none; /* For Chrome, Safari, and Opera */
+}

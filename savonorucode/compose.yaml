@@ -1,0 +1,33 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:sqlserver://savonoru.database.windows.net:1433;database=savonoru;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+      - SPRING_DATASOURCE_USERNAME=admin_user
+      - SPRING_DATASOURCE_PASSWORD=b@lkonas404
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.microsoft.sqlserver.jdbc.SQLServerDriver
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_SHOW_SQL=true
+      - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.SQLServerDialect
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./front-end
+    ports:
+      - "5173:5000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+

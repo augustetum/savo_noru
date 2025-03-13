@@ -1,0 +1,41 @@
+
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: poppins;
+}
+
+h1{
+    font-size: 30px;
+}
+
+p{
+    font-size: 13px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+a{
+    font-size: 13px;
+}
+
+.input::placeholder {
+    font-size: 15px;
+}
+
+input{
+    font-size: 15px;
+}
+
+button{
+    font-size: 14px;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}

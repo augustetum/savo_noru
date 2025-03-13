@@ -1,0 +1,23 @@
+.activeInfo{
+    border: none;
+    width: 16rem;
+    height: 2rem;
+    border-radius: 1rem;
+ /* box-shadow: 2px 4px 30px 0px rgba(0, 0, 0, 0.5); */
+}
+
+.atšaukti{
+    background-color: rgba(255, 255, 255, 0.727);
+    border: none;
+    margin-left: 1rem;
+    color: rgba(83, 12, 226, 1);
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.atšaukti:hover{
+    cursor: pointer;
+    background-color: white;
+}
+

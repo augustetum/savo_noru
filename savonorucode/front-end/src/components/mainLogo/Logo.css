@@ -1,0 +1,35 @@
+.logo {
+    height: 200px;
+    width: 250px;
+}
+
+/* Responsive adjustments for the logo */
+@media (max-width: 600px) {
+    .logo {
+        height: 150px;
+        width: 200px;
+    }
+}
+
+.GreetingsText {
+    color: white;
+    white-space: nowrap; /* Ensure text does not wrap */
+}
+
+.TextLogoContainer {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2rem; /* Add padding to create a gap underneath */
+}
+
+/* Responsive adjustments for the text container */
+@media (max-width: 600px) {
+    .TextLogoContainer {
+        top: 5%; /* Adjust top position for smaller screens */
+        padding-bottom: 3rem; /* Adjust padding for smaller screens */
+    }
+}

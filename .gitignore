@@ -1,0 +1,6 @@
+# .gitignore
+node_modules/
+target/
+/front-end/node_modules/
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/MavenWrapperDownloader.java

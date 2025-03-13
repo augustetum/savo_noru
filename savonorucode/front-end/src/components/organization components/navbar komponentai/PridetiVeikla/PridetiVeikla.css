@@ -1,0 +1,93 @@
+
+.activityContainer {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    overflow: auto;
+}
+
+.activityHeader {
+    margin: 3.5rem 0;
+    top: 10%;
+    font-size: 2.5rem;
+}
+
+.stepperContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.stepperButton {
+    padding-top: var(--stepper-button-top-padding); /* Use the CSS variable for top padding */
+}
+
+.activityForm {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.activityCheckbox {
+    margin-right: 2rem; /* Increase the margin to move the checkbox further away */
+    transform: scale(1.5); /* Scale the checkbox to make it larger */
+    appearance: none; /* Remove default checkbox styling */
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #ffffff; /* Border color for the unchecked state */
+    border-radius: 0.25rem; /* Optional: rounded corners */
+    background-color: transparent; /* Transparent background for the unchecked state */
+    cursor: pointer; /* Change cursor to pointer */
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+.activityTextContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 1rem; /* Increase padding to make rectangles taller */
+    border-radius: 1rem;
+    width: 15rem; /* Set a fixed width for all rectangles */
+    justify-content: space-between; /* Space out the icons and text */
+}
+
+.activityTextContainer.checked {
+    background-color: #DFCFFF; /* Background color for the checked state */
+}
+
+.activityTextContainer.checked .activityText {
+    color: #7034E8; /* Text color for the checked state */
+}
+
+.activityText {
+    color: #999999;
+    margin: 0;
+    line-height: 2rem; /* Increase line-height to make text taller */
+    font-size: 1.2rem; /* Increase font-size to make text bigger */
+    text-align: center; /* Center the text within the rectangle */
+}
+
+.activityIcon {
+    width: 5rem; /* Adjust width of the icon */
+    height: 2rem; /* Adjust height of the icon */
+}
+
+.toliau-button{
+    border: none;
+    padding: 1rem 6rem;;
+    background-color: white;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.toliau-button:hover{
+    background-color: #DFCFFF;
+    color: #7034E8;
+    cursor: pointer;
+}
