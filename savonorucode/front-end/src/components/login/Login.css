@@ -1,0 +1,118 @@
+.TextContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: auto;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.prisijungimas{
+    margin-bottom: 0.8rem;
+}
+
+.under-prisijungimas{
+    text-wrap: nowrap;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+}
+
+.input{
+    background: transparent;
+    border: none;
+    border-bottom: solid rgba(255, 255, 255, 0.7) 1px;
+    width: 70%;
+    color: rgba(255, 255, 255, 0.7);   
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    outline: none;
+}
+
+.pamirsote-slaptazodi {
+    align-self: flex-start;
+    margin-left: 15%;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.prisijungti-button{
+    border:none;
+    font-weight: bold;
+    width: 70%;
+    height: 2rem;
+    border-radius: 1rem;
+    color: rgba(112, 52, 232, 1);
+    background-color: white;
+}
+
+.savanoris-organizacija{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.bubble-button{
+    width: 1.4rem;
+    height: 1.4rem;
+    background: transparent;
+    border: solid white 1px;
+    border-radius: 1rem;
+}
+
+.bubble-button.active {
+    background: white;
+}
+
+.footer-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 1.5rem;
+}
+
+.neturite-paskyros{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.registruotis{
+    border:none;
+    font-weight: bold;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(140, 82, 255, 1);
+    color: white;
+}
+
+.bubble-button:hover,
+.prisijungti-button:hover,
+.registruotis:hover,
+.pamirsote-slaptazodi:hover{
+    cursor: pointer;
+}
+
+.prisijungti-button:hover,
+.registruotis:hover{
+    opacity: 0.7;
+}
+
+

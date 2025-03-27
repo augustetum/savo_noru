@@ -1,0 +1,106 @@
+.head-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+}
+
+.HeadName{
+    margin: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.white-container{
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.ActivityButton{
+    background-color: rgba(223, 207, 255, 1);
+    border:none;
+    border-radius: 2rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    padding: 1rem;
+    width: 83vw;
+}
+
+.Bell{
+    z-index: 2;
+}
+
+.activityPicture{
+    width: 5rem;
+
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 0.7rem;
+    align-items: flex-start;
+}
+
+.ActivityName{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.Bell{
+    margin: 2rem 2rem 0 0;
+    align-self: self-end;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    z-index: 2;
+}
+
+.underHead{
+    width: 80%;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding-left: 1rem;
+}
+
+.underHead::placeholder{
+    color: rgba(183, 183, 183, 0.5);
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.buttons{
+    border-radius: 0.5rem 0.5rem 0 0;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0.4rem 1rem;
+}
+
+.buttons.active{
+    color: rgba(112, 52, 232, 1);
+    background-color: white;
+}

@@ -1,0 +1,97 @@
+/* Styles for the Veikla2 component */
+
+.veikla2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    height: 80%;
+}
+
+.veikla2-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.veikla2-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    gap: 1rem;
+}
+
+.veikla2-input,
+.veikla2-file-input,
+.veikla2-date-input,
+.veikla2-name-input,
+.veikla2-number-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.veikla2-submit-button,
+.veikla2-back-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #7034E8;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.veikla2-submit-button:hover,
+.veikla2-back-button:hover {
+    background-color: #5a2bbd;
+}
+
+.veikla2-selected-file-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.veikla2-selected-file-container h3 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.veikla2-selected-file-container p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.veikla2-selected-file-container img {
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.veikla2-name-list-container {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.veikla2-name-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.veikla2-name-list-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
